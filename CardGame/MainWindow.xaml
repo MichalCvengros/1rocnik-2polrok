@@ -1,0 +1,23 @@
+﻿<Window x:Class="CardGame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CardGame"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="Player_1" Content="You" HorizontalAlignment="Left" Margin="377,359,0,0" VerticalAlignment="Top" Height="75" Width="75" FontSize="30" Background="#FF736969"/>
+        <Label x:Name="Player_2" Content="Boss" HorizontalAlignment="Left" Margin="377,5,0,0" VerticalAlignment="Top" Height="75" Width="75" FontSize="30" Background="#FFAF9E9E"/>
+        <Button x:Name="NextTurn" Content="P1" HorizontalAlignment="Left" Margin="719,0,0,0" VerticalAlignment="Center" Height="83" Width="81" FontSize="20" Click="NextTurn_Click"/>
+        <Label x:Name="Mana_P1" Content="4/4 mana" HorizontalAlignment="Left" Margin="635,354,0,0" VerticalAlignment="Top" Height="80" Width="155" FontSize="30" Background="#FF736969"/>
+        <Label x:Name="Mana_P2" Content="4/4 mana" HorizontalAlignment="Left" Margin="634,0,0,0" VerticalAlignment="Top" Height="80" Width="156" FontSize="30" Background="#FFAF9E9E"/>
+        <Label x:Name="HP_P1" Content="30" HorizontalAlignment="Left" Margin="452,404,0,0" VerticalAlignment="Top" Height="30" Width="30" FontSize="15" Background="#FFF40000"/>
+        <Label x:Name="HP_P2" Content="30" HorizontalAlignment="Left" Margin="452,50,0,0" VerticalAlignment="Top" Height="30" Width="30" FontSize="15" Background="#FFF40000"/>
+
+        <StackPanel x:Name="P1_Cards" Margin="5,320,474,10" Background="#FF736969"/>
+        <StackPanel x:Name="P2_Cards" Margin="10,10,469,329" Background="#FFAF9E9E"/>
+        <StackPanel x:Name="Field_P1" HorizontalAlignment="Left" Height="98" Margin="38,217,0,0" VerticalAlignment="Top" Width="639" Background="#FF736969"/>
+        <StackPanel x:Name="Field_P2" HorizontalAlignment="Left" Height="98" Margin="38,119,0,0" VerticalAlignment="Top" Width="639" Background="#FFAF9E9E"/>
+    </Grid>
+</Window>
