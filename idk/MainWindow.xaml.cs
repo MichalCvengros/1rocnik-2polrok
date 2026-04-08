@@ -155,6 +155,7 @@ namespace idk
                 }
                 ticker = 0;
                 earlyGo = true;
+                MessageBox.Show("Uliaty štart");
             }
         }
     }
