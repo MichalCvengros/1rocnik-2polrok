@@ -1,5 +1,6 @@
 <Solution>
   <Project Path="CardGame/CardGame.csproj" Id="53a214c5-3541-4948-9556-0a7b87dce2e9" />
+  <Project Path="D.U/D.U..csproj" Id="93fda42a-7d86-4f80-89e5-1e14eaa619f2" />
   <Project Path="Dungeons and Dragons/Dungeons and Dragons.csproj" />
-  <Project Path="idk/idk.csproj" Id="cd3ddb75-f018-4fe9-a0e0-2e9d567a243e" />
+  <Project Path="idk/F1 start.csproj" Id="cd3ddb75-f018-4fe9-a0e0-2e9d567a243e" />
 </Solution>
