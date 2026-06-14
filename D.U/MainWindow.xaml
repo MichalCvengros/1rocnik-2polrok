@@ -26,6 +26,7 @@
         <TextBlock HorizontalAlignment="Left" Height="22" Margin="338,264,0,0" TextWrapping="Wrap" Text="Priemer:" VerticalAlignment="Top" Width="77"/>
         <TextBlock x:Name="PocetZnamok" HorizontalAlignment="Left" Height="23" Margin="431,221,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="38"/>
         <TextBlock x:Name="PriemerZnamok" HorizontalAlignment="Left" Height="24" Margin="415,262,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="47"/>
+        <Button x:Name="SaveBtn" Content="SAVE" HorizontalAlignment="Left" Height="21" Margin="194,374,0,0" VerticalAlignment="Top" Width="82" Click="SaveBtn_Click"/>
 
     </Grid>
 </Window>

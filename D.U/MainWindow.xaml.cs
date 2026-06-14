@@ -1,4 +1,7 @@
-﻿using System.Text;
+﻿using System.Net;
+using System.Text;
+using System.Text.Json;
+using System.Text.Json.Nodes;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -8,6 +11,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace D.U_
 {
@@ -64,6 +68,30 @@ namespace D.U_
             }
             total = sucet / max;
             return total.ToString();
+        }
+        private void SaveBtn_Click(object sender, RoutedEventArgs e)
+        {
+            ukladanieStudenta();
+            ukladanieStudentovychZnamok();
+        }
+
+        List<int > grades = new List<int>();
+
+        public void ukladanieStudenta()
+        {
+            Student student = new Student();
+
+            string json = JsonSerializer.Serialize(Student_ListView.Items);
+            File.WriteAllText("student.json", json);
+        }
+
+        private void ukladanieStudentovychZnamok()
+        {
+            if (Student_ListView.SelectedItem == " ")
+            {
+                string json2 = JsonSerializer.Serialize(StudentsGrades.Items);
+                File.WriteAllText("grades.json", json2);
+            }
         }
     }
 }
