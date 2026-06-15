@@ -2,6 +2,7 @@
   <Project Path="CardGame/CardGame.csproj" Id="53a214c5-3541-4948-9556-0a7b87dce2e9" />
   <Project Path="D.U/D.U..csproj" Id="93fda42a-7d86-4f80-89e5-1e14eaa619f2" />
   <Project Path="Dungeons and Dragons/Dungeons and Dragons.csproj" />
+  <Project Path="FakeAlmostIG/FakeAlmostIG.csproj" Id="aba6059a-f1fb-423e-b110-bddafb08db72" />
   <Project Path="GunShop/GunShop.csproj" Id="5a079c05-7afb-4cdf-8a4a-cc574385642e" />
   <Project Path="idk/F1 start.csproj" Id="cd3ddb75-f018-4fe9-a0e0-2e9d567a243e" />
 </Solution>
