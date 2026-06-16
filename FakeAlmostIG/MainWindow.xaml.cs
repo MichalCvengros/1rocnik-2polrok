@@ -1,5 +1,8 @@
 ﻿using System.Diagnostics.Eventing.Reader;
+using System.IO;
 using System.Text;
+using System.Text.Json;
+using System.Text.Json.Nodes;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -23,6 +26,7 @@ namespace FakeAlmostIG
         public MainWindow()
         {
             InitializeComponent();
+            load();
         }
 
         private void LoginBtn_Click(object sender, RoutedEventArgs e)
@@ -63,5 +67,17 @@ namespace FakeAlmostIG
         {
             CheckingNameAndPassword();
         }
+
+        public void save()
+        {
+            string json = JsonSerializer.Serialize(idk);
+            File.WriteAllText("users.json", json);
+        }
+        public void load()
+        {
+            string jsonL = File.ReadAllText("users.json");
+            idk = JsonSerializer.Deserialize<List<User>>(jsonL);
+        }
+
     }
 }

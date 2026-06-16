@@ -33,6 +33,8 @@ namespace FakeAlmostIG
             user.Heslo = HesloText.Text.ToString();
             mainWindow.idk.Add(user);
 
+            mainWindow.save();
+
             this.Close();
         }
     }
