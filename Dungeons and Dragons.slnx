@@ -5,4 +5,5 @@
   <Project Path="FakeAlmostIG/FakeAlmostIG.csproj" Id="aba6059a-f1fb-423e-b110-bddafb08db72" />
   <Project Path="GunShop/GunShop.csproj" Id="5a079c05-7afb-4cdf-8a4a-cc574385642e" />
   <Project Path="idk/F1 start.csproj" Id="cd3ddb75-f018-4fe9-a0e0-2e9d567a243e" />
+  <Project Path="KoncTest/KoncTest.csproj" Id="85167b9c-522e-4fd9-81b5-4b39dffe73c6" />
 </Solution>
